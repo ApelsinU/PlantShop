@@ -1,0 +1,12 @@
+.text {
+  color: red;
+  font-size: 30px;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: #eee;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp",
-    "scss": "node-sass --watch src/assets/scss -o dist/css",
-    "gulp": "gulp"
+    "dev": "gulp"
   },
   "author": "",
   "license": "ISC",

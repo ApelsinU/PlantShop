@@ -1,0 +1,24 @@
+.shop-banner {
+  padding: 10px 0;
+}
+.shop-banner .shop-banner-inner {
+  background-color: #F3F4F6;
+}
+.shop-banner .title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  color: #2C1500;
+  margin: 10px 0 16px;
+  padding-left: 23px;
+}
+.shop-banner .banner-btn {
+  padding: 10px 42px;
+  background-color: #156963;
+  color: #FAFEFE;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+}
+
+/*# sourceMappingURL=shop-banner.css.map */

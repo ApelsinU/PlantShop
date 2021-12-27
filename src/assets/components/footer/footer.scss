@@ -1,0 +1,107 @@
+@import '../../scss/vars';
+
+.footer {
+  border-top: 2px solid rgba(21, 105, 99, 0.3);
+
+  .footer-inner {
+    padding: 58px 109px 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    font-family: $font-footer-logo;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    color: $color-primary;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+
+  .footer-title {
+    font-family: $font-footer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+
+    &.contacts-title {
+      line-height: 19px;
+      margin-bottom: 10px;
+    }
+
+    &.email-title {
+      margin-bottom: 14px;
+    }
+  }
+
+  .contacts {
+    width: 30%;
+  }
+
+  .contacts-text {
+    font-family: $font-footer;
+    font-size: 13px;
+    line-height: 20px;
+    color: #4f4f4f;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    width: 28.5%;
+  }
+
+  .links-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    font-family: $font-footer;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    margin-bottom: 14px;
+  }
+
+  .email {
+    width: 25%;
+  }
+
+  .email-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email-input {
+    font-family: $font-footer;
+    border: 1px solid #F2F2F2;
+    border-radius: 2px;
+    padding: 8px 13px;
+    margin-bottom: 9px;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+    }
+  }
+
+  .footer-btn {
+    font-family: $font-footer-btn;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 14px;
+    color: #fff;
+
+    padding: 4px 12px;
+    background-color: $color-primary;
+    border: none;
+  }
+}

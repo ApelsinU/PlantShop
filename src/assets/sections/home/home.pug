@@ -1,0 +1,32 @@
+-
+  var slider_images = [
+    { src: "images/slider-plant-1.png", alt: alt="slider-plant-1"},
+  ]
+
+mixin home
+  .home
+    .page-container
+      .row
+        .col
+          .home-slider-slides
+            each image in slider_images
+              .slider-item
+                img(src=image.src alt=image.alt)
+        .col
+          .home-content
+            .home-info
+              h1.home-title Kembang Flower Mantap
+              p.home-text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            .home-slider-controls
+              button.home-slider-button.left
+                .direction
+                  .direction-arrow
+                    include ../../../../dist/svg/arrow-left.svg
+                  .direction-text Previous
+                .slider-plant Kaktus Plant
+              button.home-slider-button.right
+                .direction
+                  .direction-text Next
+                  .direction-arrow
+                    include ../../../../dist/svg/arrow-right.svg
+                .slider-plant Rahasia Plant

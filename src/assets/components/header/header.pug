@@ -1,5 +1,14 @@
 mixin header
   .header
-    h1 test pug
-    p.text lala
-    p.text lala2
+    .container
+      .header-inner
+        .logo
+          include ../../../../dist/svg/logo.svg
+          span.logo-text P
+        nav.nav
+          a.nav-icon
+            include ../../../../dist/svg/search.svg
+          a.nav-icon
+            include ../../../../dist/svg/shopping-cart.svg
+          button.sign-btn.sign-up Sign-up
+          button.sign-btn.sign-in Sign-in

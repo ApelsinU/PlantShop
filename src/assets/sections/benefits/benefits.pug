@@ -1,0 +1,39 @@
+include ../../mixins/svg-image/svg-image
+
+-
+  var cards = [
+    { icon: "delivery-car",
+      title: "Fast Delivery",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+      icon: "headphones",
+      title: { value: "Great Customer Service", class: "big" },
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+      icon: "plant",
+      title: "Original Plants",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+    {
+      icon: "dollar-symbol",
+      title: "Affordable Price",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+    },
+  ]
+
+mixin benefits
+  .benefits
+    .container
+      .benefits-inner
+        each card in cards
+          .benefit-card
+            .benefit-card-header
+              +svg-image(card.icon)
+              if (typeof card.title === 'object')
+                h3(class=`benefit-title ${card.title.class}`)= card.title.value
+              else
+                h3.benefit-title= card.title
+            .benefit-text
+              p= card.text

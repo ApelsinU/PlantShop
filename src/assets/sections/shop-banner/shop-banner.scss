@@ -1,0 +1,43 @@
+@import '../../scss/vars';
+
+.shop-banner {
+  padding: 10px 0 80px;
+
+  .shop-banner-inner {
+    background-color: #F3F4F6;
+    justify-content: space-between;
+  }
+
+  .left-col {
+    flex-direction: column;
+    padding-left: 95px;
+    width: 61%;
+  }
+
+  .banner-content {
+    margin: auto 0;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    color: $color-secondary;
+    margin-bottom: 32px;
+  }
+
+  .banner-btn {
+    padding: 10px 41px;
+    background-color: $color-primary;
+    color: #FAFEFE;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+  }
+
+  .right-col {
+    width: 38%;
+    padding-right: 41px;
+  }
+
+}

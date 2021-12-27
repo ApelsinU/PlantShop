@@ -1,0 +1,19 @@
+include ../../components/header/header
+include ../../sections/home/home
+include ../../sections/benefits/benefits
+include ../../sections/plants/plants
+include ../../sections/help-relax/help-relax
+include ../../sections/shop-banner/shop-banner
+include ../../components/footer/footer
+
+
+mixin main
+  .main
+    //.page-container
+    +header
+    +home
+    +benefits
+    +plants
+    +help-relax
+    +shop-banner
+    +footer

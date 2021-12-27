@@ -1,0 +1,65 @@
+.plants {
+  padding: 7px 0 5px;
+
+  .carousel-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E0E0E0;
+  }
+
+  .carousel-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+  }
+
+  .carousel-filter {
+    padding: 7px 34px 7px 11px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    border: 1px solid #E0E0E0;
+    position: relative;
+  }
+
+  .carousel-filter-arrow {
+    position: absolute;
+    top: 8px;
+    left: 105px;
+    z-index: 2;
+  }
+
+  .carousel-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .carousel-plant {
+    width: 19%;
+  }
+
+  .plant-photo {
+
+  }
+
+  .plant-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000;
+    margin: 16px 0 8px;
+  }
+
+  .plant-price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+  }
+
+}

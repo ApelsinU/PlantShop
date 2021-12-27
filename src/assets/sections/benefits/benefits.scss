@@ -1,0 +1,38 @@
+@import "../../scss/vars";
+
+.benefits-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+
+.benefit-card {
+  width: 23%;
+  padding: 22px 16px;
+  border: 1px solid #E0E0E0;
+}
+
+.benefit-card-header {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.benefit-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-primary;
+  width: 100px;
+  margin-left: 14px;
+
+  &.big {
+    width: 150px;
+  }
+}
+
+.benefit-text  {
+  font-size: 10px;
+  line-height: 16px;
+  color: $color-secondary;
+}

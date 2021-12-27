@@ -1,0 +1,26 @@
+include ../../mixins/svg-image/svg-image
+
+-
+  var plants = [
+    { photo: '/images/kaktus.png', title: 'Kaktus Plants', price: 'IDR 85.000' },
+    { photo: '/images/landak.png', title: 'Landak Plants', price: 'IDR 105.000' },
+    { photo: '/images/kecubung.png', title: 'Kecubung Plants', price: 'IDR 85.000' },
+    { photo: '/images/kecubung-2.png', title: 'Kecubung Plants', price: 'IDR 85.000' },
+    { photo: '/images/kecubung-3.png', title: 'Kecubung Plants', price: 'IDR 85.000' },
+  ]
+
+mixin plants
+  .plants
+    .container
+      .plants-carosel
+        .carousel-header
+          h3.carousel-title Featured Plants
+          .carousel-filter Cheaper First
+            .carousel-filter-arrow
+              +svg-image('arrow-down')
+        .carousel-content
+          each plant in plants
+            .carusel-plant
+              img.plant-photo(src= plant.photo)
+              h4.plant-title= plant.title
+              span.plant-price= plant.price

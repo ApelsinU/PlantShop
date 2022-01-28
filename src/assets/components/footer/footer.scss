@@ -103,5 +103,12 @@
     padding: 7px 28px;
     background-color: $color-primary;
     border: none;
+
+    transition: opacity .2s linear;
+    &:hover {
+      opacity: .9;
+    }
   }
+
+
 }

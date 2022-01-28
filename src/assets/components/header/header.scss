@@ -57,9 +57,14 @@
   border: none;
   background-color: #fff;
   margin-bottom: 7px;
+  transition: opacity .2s linear;
 
   &.sign-in {
     background-color: $color-primary;
     color: #FFFFFF
+  }
+
+  &:hover {
+    opacity: .9;
   }
 }

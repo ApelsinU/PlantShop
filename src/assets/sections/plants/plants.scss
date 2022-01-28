@@ -38,14 +38,36 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+    flex-wrap: wrap;
   }
 
   .carousel-plant {
     width: 18.65%;
+    padding-bottom: 20px;
+    border: 1px solid transparent;
+    transition: border .1s linear;
+    margin-bottom: 20px;
+
+    &:hover {
+      border-color: #f5f5f5;
+      cursor: pointer;
+
+      .plant-photo {
+        transform: scale(1.1);
+      }
+
+      .plant-title {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .plant-photo-container {
+    overflow: hidden;
   }
 
   .plant-photo {
-
+    transition: transform .5s ease;
   }
 
   .plant-title {

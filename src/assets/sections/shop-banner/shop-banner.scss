@@ -33,6 +33,11 @@
     font-size: 14px;
     line-height: 20px;
     border: none;
+
+    transition: opacity .2s linear;
+    &:hover {
+      opacity: .9;
+    }
   }
 
   .right-col {

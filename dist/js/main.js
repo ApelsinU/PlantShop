@@ -29,8 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   }
-
-  console.log(slidesList[0])
 });
 document.addEventListener("DOMContentLoaded", () => {
 

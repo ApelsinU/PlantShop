@@ -17,6 +17,7 @@
 .logo {
   position: relative;
   z-index: 1;
+  padding-left: 50px;
 }
 
 .logo-text {
@@ -26,7 +27,7 @@
   color: #fff;
   position: absolute;
   top: 10px;
-  left: 13px;
+  left: 63px;
   z-index: 1;
 }
 
@@ -62,7 +63,7 @@
   border-top: 2px solid rgba(21, 105, 99, 0.3);
 }
 .footer .footer-inner {
-  padding: 58px 109px 70px;
+  padding: 58px 0 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -140,10 +141,10 @@
 .footer .footer-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 8px;
+  font-size: 11px;
   line-height: 14px;
   color: #fff;
-  padding: 4px 12px;
+  padding: 7px 28px;
   background-color: #156963;
   border: none;
 }
@@ -163,13 +164,18 @@
 }
 
 .slider-item {
-  display: none;
+  display: block;
+  opacity: 0;
+  transition: all 0.3s linear;
+  position: relative;
 }
 .slider-item img {
   width: 608px;
+  height: 100%;
+  position: absolute;
 }
 .slider-item.active {
-  display: block;
+  opacity: 1;
 }
 
 .home-content {
@@ -376,23 +382,19 @@
   width: 44%;
 }
 .help-relax .title {
-  width: 520px;
   font-weight: 700;
   font-size: 40px;
   line-height: 56px;
   color: #2C1500;
   margin: 10px 0 16px;
-  padding-left: 21px;
 }
 .help-relax .image {
-  margin: auto 0 10px;
+  margin: auto 0 0;
 }
 .help-relax .text {
-  width: 520px;
   font-size: 16px;
   line-height: 28px;
   color: #2C1500;
-  padding-left: 21px;
 }
 
 .shop-banner {

@@ -6,9 +6,24 @@
   padding-bottom: 70px;
 }
 
+.home-slider-slides {
+  display: flex;
+  width: 608px;
+  height: 740px;
+  overflow: hidden;
+
+  transition: all .4s linear;
+}
+
 .slider-item {
+  display: none;
   & img {
     width: 608px;
+  }
+
+  &.active {
+    //transform: translateX(0);
+    display: block;
   }
 }
 
@@ -20,7 +35,7 @@
 .home-info {
   display: flex;
   flex-direction: column;
-  margin: 186px 70px 101px 44px;
+  margin: 186px 70px 110px 44px;
 }
 
 .home-title {
@@ -43,16 +58,22 @@
 
 .home-slider-controls {
   margin: 0 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .home-slider-button {
   padding: 40px 49px 38px 49px;
   border: none;
   transition: all .2s linear;
+  display: flex;
+  flex-direction: column;
 
   &.left {
     background-color: #fff;
     color: rgba(51, 51, 51, 0.5);
+    padding-top: 38px;
+    padding-right: 55px;
 
     .slider-plant {
       color: $color-primary;

@@ -1,6 +1,7 @@
 -
   var slider_images = [
-    { src: "images/slider-plant-1.png", alt: alt="slider-plant-1"},
+    { id: "1", src: "images/slider-plant-1.png", alt: "slider-plant-1"},
+    { id: "2", src: "images/slider-plant-2.png", alt: "slider-plant-2"},
   ]
 
 mixin home
@@ -10,7 +11,7 @@ mixin home
         .col
           .home-slider-slides
             each image in slider_images
-              .slider-item
+              .slider-item(data-slide=image.id)
                 img(src=image.src alt=image.alt)
         .col
           .home-content

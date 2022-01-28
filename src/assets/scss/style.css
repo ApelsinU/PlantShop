@@ -154,8 +154,22 @@
   padding-bottom: 70px;
 }
 
+.home-slider-slides {
+  display: flex;
+  width: 608px;
+  height: 740px;
+  overflow: hidden;
+  transition: all 0.4s linear;
+}
+
+.slider-item {
+  display: none;
+}
 .slider-item img {
   width: 608px;
+}
+.slider-item.active {
+  display: block;
 }
 
 .home-content {
@@ -166,7 +180,7 @@
 .home-info {
   display: flex;
   flex-direction: column;
-  margin: 186px 70px 101px 44px;
+  margin: 186px 70px 110px 44px;
 }
 
 .home-title {
@@ -189,16 +203,22 @@
 
 .home-slider-controls {
   margin: 0 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .home-slider-button {
   padding: 40px 49px 38px 49px;
   border: none;
   transition: all 0.2s linear;
+  display: flex;
+  flex-direction: column;
 }
 .home-slider-button.left {
   background-color: #fff;
   color: rgba(51, 51, 51, 0.5);
+  padding-top: 38px;
+  padding-right: 55px;
 }
 .home-slider-button.left .slider-plant {
   color: #156963;
@@ -302,6 +322,7 @@
   font-size: 20px;
   line-height: 24px;
   color: #000;
+  margin-top: 4px;
 }
 .plants .carousel-filter {
   padding: 7px 34px 7px 11px;
@@ -324,14 +345,14 @@
   text-align: center;
 }
 .plants .carousel-plant {
-  width: 19%;
+  width: 18.65%;
 }
 .plants .plant-title {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #000;
-  margin: 16px 0 8px;
+  margin: 18px 0 5px;
 }
 .plants .plant-price {
   font-weight: 600;
@@ -361,7 +382,7 @@
   line-height: 56px;
   color: #2C1500;
   margin: 10px 0 16px;
-  padding-left: 23px;
+  padding-left: 21px;
 }
 .help-relax .image {
   margin: auto 0 10px;
@@ -371,7 +392,7 @@
   font-size: 16px;
   line-height: 28px;
   color: #2C1500;
-  padding-left: 23px;
+  padding-left: 21px;
 }
 
 .shop-banner {
